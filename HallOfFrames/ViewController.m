@@ -10,6 +10,7 @@
 #import "Picture.h"
 #import <UIKit/UIKit.h>
 #import "PictureCollectionViewCell.h"
+#import "CustomView.h"
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property NSMutableArray *galleryPhotos;
@@ -35,7 +36,9 @@
     PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PictureCell" forIndexPath:indexPath];
     
     Picture *pictureForCell = self.galleryPhotos[indexPath.row];
+    //Picture *backGroundForCell = self.galleryPhotos[indexPath.row];
     cell.photoForCell.image = pictureForCell.picture;
+    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
@@ -43,5 +46,12 @@
     
     return self.galleryPhotos.count;
 }
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    
+}
+
 
 @end

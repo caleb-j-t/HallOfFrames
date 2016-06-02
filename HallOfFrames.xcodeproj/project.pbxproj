@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FFE3AF11D00D1EE007A56FA /* CustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFE3AF01D00D1EE007A56FA /* CustomizationView.xib */; };
+		5FFE3AF41D00D218007A56FA /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE3AF31D00D218007A56FA /* CustomView.m */; };
 		F9BCC5A81D00BCCB000B486F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BCC5A71D00BCCB000B486F /* main.m */; };
 		F9BCC5AB1D00BCCB000B486F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BCC5AA1D00BCCB000B486F /* AppDelegate.m */; };
 		F9BCC5AE1D00BCCB000B486F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BCC5AD1D00BCCB000B486F /* ViewController.m */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FFE3AF01D00D1EE007A56FA /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizationView.xib; sourceTree = "<group>"; };
+		5FFE3AF21D00D218007A56FA /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		5FFE3AF31D00D218007A56FA /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		F9BCC5A31D00BCCB000B486F /* HallOfFrames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HallOfFrames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BCC5A71D00BCCB000B486F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9BCC5A91D00BCCB000B486F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +77,9 @@
 				F9BCC5BE1D00C046000B486F /* PictureCollectionViewCell.m */,
 				F9BCC5C01D00C0BA000B486F /* Picture.h */,
 				F9BCC5C11D00C0BA000B486F /* Picture.m */,
+				5FFE3AF01D00D1EE007A56FA /* CustomizationView.xib */,
+				5FFE3AF21D00D218007A56FA /* CustomView.h */,
+				5FFE3AF31D00D218007A56FA /* CustomView.m */,
 				F9BCC5AF1D00BCCB000B486F /* Main.storyboard */,
 				F9BCC5B21D00BCCB000B486F /* Assets.xcassets */,
 				F9BCC5B41D00BCCB000B486F /* LaunchScreen.storyboard */,
@@ -148,6 +156,7 @@
 			files = (
 				F9BCC5B61D00BCCB000B486F /* LaunchScreen.storyboard in Resources */,
 				F9BCC5B31D00BCCB000B486F /* Assets.xcassets in Resources */,
+				5FFE3AF11D00D1EE007A56FA /* CustomizationView.xib in Resources */,
 				F9BCC5B11D00BCCB000B486F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +173,7 @@
 				F9BCC5BF1D00C046000B486F /* PictureCollectionViewCell.m in Sources */,
 				F9BCC5AB1D00BCCB000B486F /* AppDelegate.m in Sources */,
 				F9BCC5A81D00BCCB000B486F /* main.m in Sources */,
+				5FFE3AF41D00D218007A56FA /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +324,7 @@
 				F9BCC5BC1D00BCCB000B486F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
