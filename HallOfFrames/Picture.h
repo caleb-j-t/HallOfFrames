@@ -15,7 +15,7 @@
 @property  UIImage *picture;
 @property UIColor *frameColor;
 
-
+- (instancetype)initWithPicture:(UIImage *)originalPicture andColor:(UIColor *)color;
 
 
 @end

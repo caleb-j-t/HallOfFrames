@@ -8,6 +8,17 @@
 
 #import "Picture.h"
 
+
+
 @implementation Picture
+
+- (instancetype)initWithPicture:(UIImage *)originalPicture andColor:(UIColor *)color{
+    if (self) {
+        self.picture = originalPicture;
+        self.frameColor = color;
+    }
+    return self;
+}
+
 
 @end
