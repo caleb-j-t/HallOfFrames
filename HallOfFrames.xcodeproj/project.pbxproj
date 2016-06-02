@@ -13,6 +13,8 @@
 		F9BCC5B11D00BCCB000B486F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BCC5AF1D00BCCB000B486F /* Main.storyboard */; };
 		F9BCC5B31D00BCCB000B486F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BCC5B21D00BCCB000B486F /* Assets.xcassets */; };
 		F9BCC5B61D00BCCB000B486F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BCC5B41D00BCCB000B486F /* LaunchScreen.storyboard */; };
+		F9BCC5BF1D00C046000B486F /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BCC5BE1D00C046000B486F /* PictureCollectionViewCell.m */; };
+		F9BCC5C21D00C0BA000B486F /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BCC5C11D00C0BA000B486F /* Picture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		F9BCC5B21D00BCCB000B486F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9BCC5B51D00BCCB000B486F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9BCC5B71D00BCCB000B486F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BCC5BD1D00C046000B486F /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
+		F9BCC5BE1D00C046000B486F /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
+		F9BCC5C01D00C0BA000B486F /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		F9BCC5C11D00C0BA000B486F /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				F9BCC5AA1D00BCCB000B486F /* AppDelegate.m */,
 				F9BCC5AC1D00BCCB000B486F /* ViewController.h */,
 				F9BCC5AD1D00BCCB000B486F /* ViewController.m */,
+				F9BCC5BD1D00C046000B486F /* PictureCollectionViewCell.h */,
+				F9BCC5BE1D00C046000B486F /* PictureCollectionViewCell.m */,
+				F9BCC5C01D00C0BA000B486F /* Picture.h */,
+				F9BCC5C11D00C0BA000B486F /* Picture.m */,
 				F9BCC5AF1D00BCCB000B486F /* Main.storyboard */,
 				F9BCC5B21D00BCCB000B486F /* Assets.xcassets */,
 				F9BCC5B41D00BCCB000B486F /* LaunchScreen.storyboard */,
@@ -150,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9BCC5AE1D00BCCB000B486F /* ViewController.m in Sources */,
+				F9BCC5C21D00C0BA000B486F /* Picture.m in Sources */,
+				F9BCC5BF1D00C046000B486F /* PictureCollectionViewCell.m in Sources */,
 				F9BCC5AB1D00BCCB000B486F /* AppDelegate.m in Sources */,
 				F9BCC5A81D00BCCB000B486F /* main.m in Sources */,
 			);
