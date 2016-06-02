@@ -11,5 +11,6 @@
 @interface PictureCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoForCell;
+@property (weak, nonatomic) IBOutlet UIImageView *coloredFrame;
 
 @end

@@ -33,13 +33,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="393"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iuA-v0-tiV">
+                                                    <rect key="frame" x="15" y="13" width="560" height="372"/>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOb-N7-dAO">
                                                     <rect key="frame" x="44" y="36" width="512" height="321"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
+                                            <outlet property="coloredFrame" destination="iuA-v0-tiV" id="8SY-dp-kPm"/>
                                             <outlet property="photoForCell" destination="ZOb-N7-dAO" id="ZJl-fz-YRJ"/>
                                         </connections>
                                     </collectionViewCell>
@@ -58,6 +63,9 @@
                             <constraint firstItem="7YP-Af-hBH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a3C-hP-LSx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7YP-Af-hBH" id="gRV-Ye-upH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

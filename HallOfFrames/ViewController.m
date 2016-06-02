@@ -12,7 +12,8 @@
 #import "PictureCollectionViewCell.h"
 #import "CustomView.h"
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, CustomViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property NSMutableArray *galleryPhotos;
 @end
 
@@ -30,15 +31,25 @@
     
     self.galleryPhotos = [NSMutableArray arrayWithObjects: picture1, picture2, picture3, picture4, picture5,  nil];
     
+    if (self.collectionView.allowsSelection) {
+        NSLog(@"it is collection view selectable");
+    }
+    
+    
+}
+
+-(void)didTapXibButton:(UIButton *)button {
+    if([button.titleLabel.text isEqualToString:@"Red"]) {
+        //continue from here!!!
+    }
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PictureCell" forIndexPath:indexPath];
     
     Picture *pictureForCell = self.galleryPhotos[indexPath.row];
-    //Picture *backGroundForCell = self.galleryPhotos[indexPath.row];
     cell.photoForCell.image = pictureForCell.picture;
-    cell.backgroundColor = [UIColor redColor];
+   
     return cell;
 }
 
@@ -49,8 +60,22 @@
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
     
+    // Made a variable that contains the .xib which is of class CustomView
+    CustomView *colorSelector = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    
+    //passed method addSubview to the viewcontrollers view property
+    [self.view addSubview:colorSelector];
+    
+    //resigned the VC's view's firstResponder
+    [self.view resignFirstResponder];
+    
+    //centered the subview
+    colorSelector.center = self.view.center;
+    
+//    PictureCollectionViewCell *selectedCell = [collectionView cellForItemAtIndexPath:indexPath];
+//    selectedCell.backgroundColor
+    colorSelector.delegate = self;
 }
 
 
