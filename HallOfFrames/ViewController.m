@@ -13,8 +13,13 @@
 #import "CustomView.h"
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, CustomViewDelegate>
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *galleryCollectionView;
 @property NSMutableArray *galleryPhotos;
+@property UIColor *colorForBackground;
+@property CustomView *colorSelector;
+@property Picture *pictureToChangeBackgroundColor;
+@property PictureCollectionViewCell *selectedCell;
+
 @end
 
 @implementation ViewController
@@ -31,7 +36,7 @@
     
     self.galleryPhotos = [NSMutableArray arrayWithObjects: picture1, picture2, picture3, picture4, picture5,  nil];
     
-    if (self.collectionView.allowsSelection) {
+    if (self.galleryCollectionView.allowsSelection) {
         NSLog(@"it is collection view selectable");
     }
     
@@ -39,9 +44,23 @@
 }
 
 -(void)didTapXibButton:(UIButton *)button {
-    if([button.titleLabel.text isEqualToString:@"Red"]) {
-        //continue from here!!!
+    if([button.titleLabel.text isEqualToString:@"Blue"]) {
+        self.colorForBackground = [UIColor blueColor];
+    }else if ([button.titleLabel.text isEqualToString:@"Green"]) {
+        self.colorForBackground = [UIColor greenColor];
+    }else {
+        self.colorForBackground = [UIColor yellowColor];
     }
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.galleryCollectionView reloadData];
+    }];
+    
+    NSLog(@"%@", button.titleLabel.text);
+    
+    self.pictureToChangeBackgroundColor.frameColor = self.colorForBackground;
+    
+    [self.colorSelector removeFromSuperview];
+    [self.galleryCollectionView reloadData];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -49,7 +68,8 @@
     
     Picture *pictureForCell = self.galleryPhotos[indexPath.row];
     cell.photoForCell.image = pictureForCell.picture;
-   
+    NSLog(@"color is %@", self.colorForBackground);
+    
     return cell;
 }
 
@@ -62,20 +82,23 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     // Made a variable that contains the .xib which is of class CustomView
-    CustomView *colorSelector = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    self.pictureToChangeBackgroundColor = self.galleryPhotos[indexPath.row];
+//    self.selectedCell = [self.galleryCollectionView cellForItemAtIndexPath:indexPath.row];
+//    
+    self.colorSelector = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
     
     //passed method addSubview to the viewcontrollers view property
-    [self.view addSubview:colorSelector];
+    [self.view addSubview:self.colorSelector];
     
     //resigned the VC's view's firstResponder
     [self.view resignFirstResponder];
     
     //centered the subview
-    colorSelector.center = self.view.center;
+    self.colorSelector.center = self.view.center;
     
 //    PictureCollectionViewCell *selectedCell = [collectionView cellForItemAtIndexPath:indexPath];
 //    selectedCell.backgroundColor
-    colorSelector.delegate = self;
+    self.colorSelector.delegate = self;
 }
 
 
