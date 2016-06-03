@@ -12,28 +12,37 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcb-MY-5qd">
-                    <rect key="frame" x="285" y="247" width="42" height="30"/>
-                    <state key="normal" title="Green"/>
+                    <rect key="frame" x="279" y="247" width="42" height="30"/>
+                    <state key="normal" title="Green">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="onXibButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="7wX-57-BOZ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS3-gd-IEn">
-                    <rect key="frame" x="146" y="247" width="31" height="30"/>
-                    <state key="normal" title="Blue"/>
+                    <rect key="frame" x="285" y="198" width="31" height="30"/>
+                    <state key="normal" title="Blue">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
                     <connections>
                         <action selector="onXibButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="jbD-2O-W0V"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoa-zP-RBr">
-                    <rect key="frame" x="431" y="247" width="44" height="30"/>
-                    <state key="normal" title="Yellow"/>
+                    <rect key="frame" x="278" y="285" width="44" height="30"/>
+                    <state key="normal" title="Yellow">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="onXibButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="rhZ-GX-yzy"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZ0-cq-fs8">
+                    <rect key="frame" x="250" y="154" width="100" height="216"/>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
         </view>
     </objects>
 </document>

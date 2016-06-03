@@ -34,25 +34,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="393"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iuA-v0-tiV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iuA-v0-tiV">
                                                     <rect key="frame" x="56" y="36" width="489" height="322"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZOb-N7-dAO">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOb-N7-dAO">
                                                     <rect key="frame" x="78" y="57" width="444" height="279"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="ZOb-N7-dAO" firstAttribute="leading" secondItem="0Xg-ku-BSJ" secondAttribute="leadingMargin" constant="70" id="3Vk-3B-9yc"/>
-                                            <constraint firstItem="iuA-v0-tiV" firstAttribute="top" secondItem="0Xg-ku-BSJ" secondAttribute="topMargin" constant="28" id="AYV-Ax-JTH"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="iuA-v0-tiV" secondAttribute="bottom" constant="27" id="L2N-0q-4G3"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="ZOb-N7-dAO" secondAttribute="trailing" constant="70" id="VRG-pS-un7"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="ZOb-N7-dAO" secondAttribute="bottom" constant="49" id="WUI-Gl-TJN"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="iuA-v0-tiV" secondAttribute="trailing" constant="47" id="YeP-o5-zHR"/>
-                                            <constraint firstItem="ZOb-N7-dAO" firstAttribute="top" secondItem="0Xg-ku-BSJ" secondAttribute="topMargin" constant="49" id="re8-Mn-rnn"/>
-                                            <constraint firstItem="iuA-v0-tiV" firstAttribute="leading" secondItem="0Xg-ku-BSJ" secondAttribute="leadingMargin" constant="48" id="uQ4-BX-lr9"/>
+                                            <constraint firstItem="iuA-v0-tiV" firstAttribute="top" secondItem="0Xg-ku-BSJ" secondAttribute="topMargin" constant="10" id="EaM-YP-OXX"/>
+                                            <constraint firstItem="ZOb-N7-dAO" firstAttribute="leading" secondItem="0Xg-ku-BSJ" secondAttribute="leadingMargin" constant="20" id="HPI-3f-qYd"/>
+                                            <constraint firstItem="ZOb-N7-dAO" firstAttribute="top" secondItem="0Xg-ku-BSJ" secondAttribute="topMargin" constant="20" id="KF2-MF-VXJ"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="iuA-v0-tiV" secondAttribute="trailing" constant="10" id="Pje-ta-U86"/>
+                                            <constraint firstItem="iuA-v0-tiV" firstAttribute="leading" secondItem="0Xg-ku-BSJ" secondAttribute="leadingMargin" constant="10" id="Sbt-8K-idN"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="iuA-v0-tiV" secondAttribute="bottom" constant="10" id="aPR-NY-4nq"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ZOb-N7-dAO" secondAttribute="trailing" constant="20" id="eUx-va-GNc"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ZOb-N7-dAO" secondAttribute="bottom" constant="20" id="xrb-d1-cp6"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="coloredFrame" destination="iuA-v0-tiV" id="8SY-dp-kPm"/>

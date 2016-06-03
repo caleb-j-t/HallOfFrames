@@ -28,11 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    Picture *picture1 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture1"] andColor:[UIColor greenColor]];
-    Picture *picture2 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture2"] andColor:[UIColor greenColor]];
-    Picture *picture3 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture3"] andColor:[UIColor greenColor]];
-    Picture *picture4 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture4"] andColor:[UIColor greenColor]];
-    Picture *picture5 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture5"] andColor:[UIColor greenColor]];
+    Picture *picture1 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture1"] andColor:[UIColor blackColor]];
+    Picture *picture2 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture2"] andColor:[UIColor blackColor]];
+    Picture *picture3 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture3"] andColor:[UIColor blackColor]];
+    Picture *picture4 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture4"] andColor:[UIColor blackColor]];
+    Picture *picture5 = [[Picture alloc] initWithPicture:[UIImage imageNamed:@"Picture5"] andColor:[UIColor blackColor]];
     
     self.galleryPhotos = [NSMutableArray arrayWithObjects: picture1, picture2, picture3, picture4, picture5,  nil];
     
